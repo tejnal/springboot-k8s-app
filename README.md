@@ -51,16 +51,16 @@ docker run -p 8080:8081 springboot-k8s-app
 
  * Create Deployment.ymal - it provides the ability to create pods 
   ```
-     to create deplayment.yaml and run that kubectl apply -f deployment.yaml
+     to create deplayment.yaml run that kubectl apply -f deployment.yaml
   ```
  * Create Service.ymal -- a k8s component that allow you to access the pod 
   ```
-    to create service.yaml and run kubectl apply -f service.yaml
+    to create service.yaml run kubectl apply -f service.yaml
 
   ```
  * create Ingress.ymal -- Network filter they rout the inbound and outbound request based on certain rule 
   ```
-    to create ingress.ymal and run kubectl apply -f ingress.yaml 
+    to create ingress.ymal run kubectl apply -f ingress.yaml 
   ```
  
  
