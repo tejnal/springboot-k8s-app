@@ -47,7 +47,7 @@ public class BooksController {
   public ResponseEntity<Books> createBook(@RequestBody Books book) {
     try {
       // save is by default transactional
-          booksRepository.save(book);
+      booksRepository.save(book);
       return new ResponseEntity<>(HttpStatus.CREATED);
     } catch (Exception e) {
       return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -55,8 +55,7 @@ public class BooksController {
   }
 
   @PutMapping("/books/{id}")
-  public ResponseEntity<Books> updateBook(
-      @PathVariable("id") long id, @RequestBody Books book) {
+  public ResponseEntity<Books> updateBook(@PathVariable("id") long id, @RequestBody Books book) {
     Optional<Books> bookDate = booksRepository.findById(id);
     if (bookDate.isPresent()) {
       val bookToUpdate = bookDate.get();
