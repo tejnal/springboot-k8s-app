@@ -3,7 +3,7 @@
 
 ## Tech Stack
 Spring boot, java 11, Spring Data, Spring documentation, Spring Actuator
-Spring web, Spring data jpa, embedded tomcat, docker, k8s and Jenkins 
+Spring web, Spring data jpa, embedded tomcat, git, maven, github docker, k8s and Jenkins 
 
 ## kubernates components that been used in this project 
  1. Kind - to create local k8 cluster , we do this differently in cloud using Terraform and AWS EKS  
